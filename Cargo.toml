@@ -1,0 +1,19 @@
+[package]
+name = "libeva-rs"
+version = "0.1.0"
+authors = ["anatolybazarov"]
+description = "reverse engineered driver for the EVA veterinary x-ray sensor (AFP imaging sar3kldr and sar3kusb)"
+keywords = ["libeva","sar3kldr","sar3kusb","eva driver"]
+repository = "https://github.com/anatolybazarov/eva-driver"
+readme = "README.md"
+edition = "2021"
+
+[lib]
+name = "eva"
+path = "src/lib.rs"
+
+[dev-dependencies]
+tiff = "0.9.0"
+
+[dependencies]
+rusb = "0.9.1"
